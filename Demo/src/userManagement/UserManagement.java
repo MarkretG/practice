@@ -32,10 +32,13 @@ public class UserManagement {
         String mail = scanner.nextLine();
         System.out.println("enter password");
         String password = scanner.nextLine();
+        System.out.println("enter balance");
+        double balance=scanner.nextDouble();
         User user = new User();
         user.setMailId(mail);
         user.setUserName(name);
         user.setPassword(password);
+
         return user;
     }
 
